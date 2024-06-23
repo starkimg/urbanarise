@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header, .content, .updates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.header {
+    background-color: #4CAF50;
+    color: white;
+}
+.content {
+    background-color: #8BC34A;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+.updates {
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.header img, .content img, .updates img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.header div, .content div, .updates div {
+    flex: 1;
+    padding: 10px;
+}
+.header h1 {
+    font-size: 2em;
+}
+.content h2, .updates h2 {
+    margin-top: 0;
+}
+.content p, .updates p {
+    line-height: 1.6;
+}
+.button {
+    background-color: #800080;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+.button:hover {
+    background-color: #b300b3;
+}
+.updates div {
+    margin-bottom: 20px;
+}
+.updates div h3 {
+    margin: 10px 0;
+}
+.updates div a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+.updates div a:hover {
+    text-decoration: underline;
+}
+.features-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.features-list li {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 40px); /* Ajustar según el diseño deseado */
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+.features-list li:hover {
+    transform: translateY(-10px);
+}
+.features-list img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.features-list h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+.features-list p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
